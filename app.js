@@ -2,7 +2,8 @@ const express = require('express')
 const app = express()
 const hbs = require('hbs')
 const cors = require('cors')
-const port = 8181
+require("dotenv").config()
+const port = process.env.PORT
 
 //Especificar el directorio público
 app.use(express.static('public'))
